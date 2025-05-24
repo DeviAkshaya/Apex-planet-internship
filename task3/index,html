@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Quiz App</h1>
+  <div class="container">
+    <div class="section quiz" onclick="expandSection(this)">
+      <button class="close-btn" onclick="closeSection(event)">X</button>
+      <h2>Quiz</h2>
+      <div id="quiz-question"></div>
+      <div id="quiz-options"></div>
+      <button onclick="submitAnswer(event)">Submit & Next</button>
+    </div>
+
+    <div class="section carousel" onclick="expandSection(this)">
+      <button class="close-btn" onclick="closeSection(event)">X</button>
+      <h2>Image Carousel Site</h2>
+      <img id="carouselImg" src="" alt="CSE Image" />
+      <div class="carousel-controls">
+        <button onclick="prevImage(event)">Previous</button>
+        <button onclick="nextImage(event)">Next</button>
+      </div>
+    </div>
+
+    <div class="section api-section" onclick="expandSection(this)">
+      <button class="close-btn" onclick="closeSection(event)">X</button>
+      <h2>Wanna hear a joke !!!!</h2>
+      <div id="joke">Click the button for a tech or funny joke!</div>
+      <button onclick="fetchJoke(event)">Fetch Joke</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
