@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+  </header>
+  <nav>
+    <button onclick="showSection('about')">About</button>
+    <button onclick="showSection('projects')">Projects</button>
+    <button onclick="showSection('contact')">Contact</button>
+  </nav>
+
+  <section id="about" class="active">
+    <h2>About Me</h2>
+    <p>I am an enthusiastic and dedicated <strong>Full Stack Web Developer</strong> with a passion for creating dynamic, responsive, and user-friendly web applications. As a Computer Science Engineering student at <strong>JNTU College of Engineering</strong>, I’ve developed a strong foundation in both front-end and back-end technologies, with hands-on experience building a range of projects including:</p>
+    <ul>
+      <li>Quiz Applications</li>
+      <li>Currency Converters</li>
+      <li>To-Do Lists</li>
+      <li>Contact Forms</li>
+      <li>Image Carousels</li>
+      <li>User Information Portals</li>
+      <li>Other Interactive Web Interfaces</li>
+    </ul>
+    <p>I am proficient in core web technologies such as <strong>HTML, CSS, and JavaScript</strong>, and skilled in programming languages like <strong>Python, Java, and C</strong>. My ability to quickly learn new technologies and apply them to real-world projects makes me a versatile and efficient developer.</p>
+    <p>In addition to my technical skills, I possess strong communication abilities, allowing me to collaborate effectively with teams and understand client requirements. I take pride in writing clean, maintainable code and continuously strive to enhance my knowledge and stay updated with the latest industry trends.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Products</h2>
+    <label>Filter by category:</label>
+    <select id="categoryFilter" onchange="filterProducts()">
+      <option value="all">All</option>
+      <option value="electronics">Electronics</option>
+      <option value="books">Books</option>
+      <option value="fashion">Fashion</option>
+    </select>
+
+    <label>Sort by:</label>
+    <select id="sortBy" onchange="sortProducts()">
+      <option value="default">Default</option>
+      <option value="price">Price</option>
+      <option value="rating">Rating</option>
+    </select>
+
+    <div class="products" id="productList"></div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form" onsubmit="submitForm(event)">
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="text" id="education" placeholder="Education" required />
+      <button type="submit">Submit</button>
+    </form>
+    <div class="success-msg" id="successMsg"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
