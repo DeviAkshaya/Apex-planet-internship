@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">ShopSmart</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="checkout.html">Checkout</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </header>
+
+  <section class="contact-form">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+      <p id="contactSuccess" class="success-message" style="display: none;"></p>
+
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Akshaya's E-Commerce. All rights reserved.</p>
+  </footer>
+
+  <script src="contact.js"></script>
+</body>
+</html>
