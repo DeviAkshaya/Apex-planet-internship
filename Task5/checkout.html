@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">ShopSmart</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="checkout.html" class="active">Checkout</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
+
+
+   
+  
+  <section class="checkout-form">
+    <h2>Billing Address</h2>
+    <form id="checkoutForm">
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="text" id="adress" placeholder="Address" required />
+      <input type="email"  id="email"placeholder="Email" required />
+      <input type="tel" id="phone" placeholder="Phone Number" required />
+      <button type="submit">Place Order</button>
+      <p id="checkoutSuccess" class="success-message" style="display:none;"></p>
+
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Akshaya's E-Commerce. All rights reserved.</p>
+  </footer>
+
+  <script src="checkout.js"></script>
+</body>
+</html>
